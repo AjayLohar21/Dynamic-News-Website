@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>News Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <nav>
+        <div class="main-nav container flex">
+            <a class="company-logo" href="#">
+                <img src="/assets/logo.png" alt="logo" >
+            </a>
+            <div class="nav-links">
+               <ul class="flex">
+                <li id="ipl" class="hover-link nav-item" onclick="onNavItemClick('ipl')">IPL</li>
+                <li id="finance" class="hover-link nav-item" onclick="onNavItemClick('finance')">Finance</li>
+                <li id="politics" class="hover-link nav-item" onclick="onNavItemClick('politics')">Politics</li>
+               </ul>
+            </div>
+            <div class="search-bar">
+                <input id="news-input" class="news-input" type="text" name="" id="" placeholder="e.g. Science">
+                <button class="search-button" onclick="display()"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div id="cards-container" class="card-container container flex">
+            
+           
+        </div>
+    </main>
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-img" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is the Title</h3>
+                <h6 class="news-source" id="news-source">End Gadget 26/08/2023</h6>
+                <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, accusamus.</p>
+            </div>
+        </div>
+    </template>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
